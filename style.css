@@ -30,7 +30,7 @@ nav li {
 nav a {
   text-decoration: none;
   color: rgb(43, 43, 43);
-  font-weight: 400;
+  font-weight: 600;
 }
 h3 {
   font-weight: 600;
@@ -60,7 +60,7 @@ h3 {
 
 .hero .gradient {
   background: #11222a;
-  background: linear-gradient(rgba(0, 0, 0, 0), #0a161c);
+  background: linear-gradient(hsla(0, 0%, 0%, 0), #0a161c);
   position: relative;
   width: 100%;
   height: 10rem;
@@ -165,7 +165,6 @@ header button {
 }
 .logo p {
   font-weight: 600;
-  text-transform: uppercase;
 }
 .logo svg {
   max-width: 2rem;
@@ -177,10 +176,18 @@ header button {
 footer {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   padding: 2rem 20%;
   border-top: solid 0.2px rgba(255, 255, 255, 0.11);
   background-color: #0a161c;
   color: white;
+}
+.copyright {
+  background: #0a161c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: small;
 }
 footer li {
   list-style: none;
