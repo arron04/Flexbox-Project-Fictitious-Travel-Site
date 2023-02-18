@@ -133,7 +133,6 @@ header button {
   font-weight: 600;
   text-transform: uppercase;
   border: none;
-  border-radius: 0.3rem;
   padding: 0.5rem 2rem;
   cursor: pointer;
   align-self: center;
@@ -165,7 +164,6 @@ header button:hover {
 
 .feature {
   flex: 1 1 25%;
-  border-radius: 0.3rem;
   padding: 2rem;
 }
 
@@ -185,7 +183,6 @@ header button:hover {
   max-height: 15rem;
   overflow: hidden;
   padding: 0;
-  border-radius: 0.3rem 0.3rem 0 0;
 }
 
 .feature .image-container img {
@@ -202,6 +199,10 @@ header button:hover {
 .feature.large {
   flex: 1 1 100%;
   padding: 2rem;
+  background-color: #ffffff00;
+  border-top: 1px solid #ffffff8c;
+  border-bottom: 1px solid #ffffff8c;
+  margin-bottom: 1rem;
 }
 
 .locations {
