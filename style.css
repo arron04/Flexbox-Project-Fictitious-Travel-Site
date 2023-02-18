@@ -48,10 +48,10 @@ nav a {
   color: var(--text-grey);
   font-weight: 600;
 }
-nav li:hover::after {
+nav a:hover::after {
   transform: scale(1);
 }
-nav li::after {
+nav a::after {
   content: "";
   display: block;
   position: relative;
@@ -90,10 +90,13 @@ h3 {
 .hero .gradient::after {
   content: url("./src/down-arrow.svg");
   position: absolute;
-  bottom: 0;
-  left: calc(50% - 2rem);
-  min-width: 3rem;
+  top: 2rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 3rem;
   height: auto;
+  box-sizing: border-box;
 }
 
 .hero .gradient {
@@ -101,7 +104,7 @@ h3 {
   background: linear-gradient(hsla(0, 0%, 0%, 0), var(--primary-color-darkest));
   position: relative;
   width: 100%;
-  height: 10rem;
+  height: 15rem;
 }
 
 header {
