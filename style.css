@@ -14,7 +14,9 @@
   --f-weight-medium: 500;
   --f-weight-bold: 600;
 }
-
+.banner-mobile {
+  display: none;
+}
 .banner {
   background-color: var(--secondary-color);
   color: var(--white);
@@ -318,7 +320,7 @@ footer section {
     display: flex;
     position: absolute;
     right: 1.5rem;
-    top: 1.5rem;
+    top: 2rem;
   }
   .logo {
     flex-direction: column;
@@ -335,6 +337,25 @@ footer section {
 /* mobile */
 
 @media (max-width: 425px) {
+  .banner {
+    display: none;
+  }
+  .banner-mobile {
+    display: block;
+    position: fixed;
+    bottom: 10rem;
+    right: -4.4rem;
+    transform: rotate(90deg);
+    background-color: var(--secondary-color);
+    padding-inline: 1rem;
+    z-index: 10;
+  }
+  .banner-mobile a {
+    color: var(--white);
+    text-decoration: none;
+    font-size: small;
+    text-align: center;
+  }
   nav {
     padding: 1rem 0;
     justify-content: center;
