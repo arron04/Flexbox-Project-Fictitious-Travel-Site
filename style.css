@@ -4,6 +4,8 @@
   --primary-color: #2c4559;
   --primary-color-dark: #10232c;
   --primary-color-darkest: #0a161c;
+  --secondary-color: #7b387e;
+  --secondary-color-dark: #6e3271;
   --white: #fff;
   --text-grey: rgb(43, 43, 43);
 
@@ -57,7 +59,7 @@ nav a::after {
   position: relative;
   width: 100%;
   height: 3px;
-  background: var(--primary-color-darkest);
+  background: var(--secondary-color);
   transition: transform 0.2s ease-in-out;
   transform: scale(0);
 }
@@ -78,7 +80,8 @@ h3 {
 
 .hero h1 {
   font-size: 6.5em;
-  font-weight: 500;
+  font-weight: 800;
+  letter-spacing: -0.05em;
   margin-bottom: 0;
 }
 
@@ -113,10 +116,15 @@ header {
   text-align: center;
   padding-bottom: 3%;
 }
+header h2 {
+  font-weight: 400;
+}
 
 header button {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--white);
+  font-weight: 600;
+  text-transform: uppercase;
   border: none;
   border-radius: 0.3rem;
   padding: 0.5rem 2rem;
@@ -126,7 +134,7 @@ header button {
 }
 
 header button:hover {
-  background-color: var(--primary-color-dark);
+  background-color: var(--secondary-color-dark);
 }
 
 .features {
@@ -212,13 +220,17 @@ header button:hover {
 
 .logo p {
   font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  white-space: nowrap;
 }
 
 .logo svg {
   max-width: 2rem;
-  min-width: 0.5rem;
+  min-width: 2.5rem;
   height: auto;
   padding-right: 5%;
+  color: var(--secondary-color);
 }
 
 footer {
@@ -233,7 +245,7 @@ footer {
 
 .copyright {
   background: var(--primary-color-darkest);
-  color: var(--white);
+  color: hsla(0, 0%, 100%, 0.4);
   text-align: center;
   padding: 1rem;
   font-size: small;
