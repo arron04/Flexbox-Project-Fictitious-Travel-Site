@@ -183,7 +183,7 @@ header button:hover {
 
 .features > .feature {
   background-color: hsla(0, 0%, 100%, 0.3);
-  backdrop-filter: blur(10px);
+  /* backdrop-filter: blur(10px); */
 }
 
 .feature {
